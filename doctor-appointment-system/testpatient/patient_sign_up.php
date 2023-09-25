@@ -1,0 +1,554 @@
+<?php require 'link.php'; ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Online Doctor's Appoinment </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!--webfonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts--> 
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Hege Refsnes">
+	
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<!--//Metis Menu -->
+</head> 
+<body>
+	<div class="main-content">
+	<section class="header-section">
+     <div class="row">
+            <div class="col-md-3">
+           <a href = "http://telemedicare.com.bd/">  <img src="../img/sfdfsdf.png"> </a>
+         </div>
+           <div class="col-md-6">
+         <!--     <ul class="nav navbar-nav">
+                <li><a href="login/index.php"> Doctor </a></li>
+                <li><a href="http://localhost//telecare/admin"> Health Tips </a></li>
+                <li><a href="about.php"> About Us </a></li>
+                <li><a href="contact.php"> Contact Us </a></li>
+             </ul>    -->
+               <nav role="navigation" class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+      <!--       <a href="#" class="navbar-brand">Brand</a> -->
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="login/index.php">Doctor's Area</a></li>
+                
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="testpatient/health_card.php">Health Card</a></li>
+                <li><a href="promotion.php">Promotions</a></li>
+            </ul>
+          
+        </div>
+    </nav>
+
+          </div>
+            <div class="col-md-3">
+                <h4 class="hlcalltext pull-left glyphicon glyphicon-earphone"> 0174-7799494 <span class="spantext">(8AM-10PM)</span> </h4>
+                <hr class="hrtop" />
+            </div>
+     </div>
+  </section>
+
+		<div id="page-wrapper">
+			<div class="main-page signup-page">
+				<h3 class="title1">!!!You Can Register!!!</h3>
+				<form action="action_sign_newPatient_doc.php" method="post" enctype="multipart/form-data"> 
+				<div class="sign-up-row widget-shadow">
+					<h5>Please Input Your Personal Information :</h5>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Name* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="patient_name" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Primary Address* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="paddress" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Permanent Address* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="peraddress" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Date of Birth* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="date" name="barth" class="btn datecl" placeholder="Booking Date">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+		
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Gender* :</h4>
+						</div>
+						<div class="sign-up2">
+							<label>
+								<input type="radio" value="Male" name="gender" required>
+								Male
+							</label>
+							<label>
+								<input type="radio" value="Female" name="gender" required>
+								Female
+							</label>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<label for="exampleInputFile">
+							Profile Image </label>
+						</div>
+						<div class="sign-up2">
+								 <input type="file" name="image" id="exampleInputFile">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Email Address :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="email" >
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Phone No* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="patient_phone" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Work Phone No* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="work_phone" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					
+					
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Select Blood Group :</h4> 
+						</div>
+						<div class="sign-up2">
+							<div class="form-group">
+								<div class="col-sm-"><br>
+									<select name="blood" id="selector1" class="form-control1">
+										<option> Select Blood Group  </option>
+										<option> O(negative)</option>
+										<option> O(+)</option>
+										<option> A(negative)</option>
+										<option> A(+)</option>
+										<option> B(negative)</option>
+										<option> B(+)</option>
+										<option> AB(negative)</option>
+										<option> AB(+)</option>
+
+
+									      
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Height :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="Height">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4> Weight :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="Weight">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Marital Status :</h4>
+						</div>
+						<div class="sign-up2">
+							<div class="form-group">
+								<div class="col-sm-"><br>
+									<select name="marital" id="selector1" class="form-control1">
+										<option> Married  </option>
+										<option> Unmarried </option>
+									      
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<h6>Login Information :</h6>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Username* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="text" name="username" required>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Password* :</h4>
+						</div>
+						<div class="sign-up2">
+								<input type="password" name="password" required> 
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Confirm Password* :</h4>
+						</div>
+						<div class="sign-up2">
+						
+								<input type="password" name="repassword" required>
+							
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+				</div>
+				<div class="sign-up-row widget-shadow">
+					<h5> Pricing Table :</h5>
+					
+						
+						
+							<div class="form-group">
+								 <div class="row">
+            <div class="col-md-4" style="color: green;">
+                <div class="panel panel-default text-left-align">
+                    <div class="panel-heading">
+						<h3 class="panel-title"><center><img src="../img/silver.jpg" class="img-responsive" height="40px weight="20px""></center></h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price" style="font-size: 200%;"><center><b><sup>TK</sup>300<sup></sup></span>
+                        <span class="period">Per Year</span></b> </center>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Affordable cost & easy to use.</li>
+                        <li class="list-group-item">2. Accepted at biggest network across the country.</li>
+                        <li class="list-group-item">3. You can choose for everyone in your friends & family.</li>
+                        <li class="list-group-item">4. Health related additional value added services.</li>
+                        <li class="list-group-item">5. Get  10% Discounts is must.</li>
+						<li class="list-group-item">6. Online Doctor Appointment. </li>
+						<li class="list-group-item">7. Online Hospital Appointment. </li>
+						<li class="list-group-item">8. Information Blood Bank in Bangladesh . </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4" style="color: blue;">
+                <div class="panel panel-default text-left-align">
+                    <div class="panel-heading">
+						<h3 class="panel-title"><center><img src="../img/GoldPackage.jpg" class="img-responsive" height="40px weight="20px""></center></h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price" style="font-size: 200%"><center><b><sup>TK</sup>400<sup></sup></span>
+                        <span class="period">Per Year</span></b> </center>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Affordable cost & easy to use.</li>
+                        <li class="list-group-item">2. Accepted at biggest network across the country.</li>
+                        <li class="list-group-item">3. You can choose for everyone in your friends & family.</li>
+                        <li class="list-group-item">4. Health related additional value added services.</li>
+                        <li class="list-group-item">5. Get 15% Discounts is must.</li>
+						<li class="list-group-item">6. Online Doctor Appointment. </li>
+						<li class="list-group-item">7. Online Hospital Appointment. </li>
+						<li class="list-group-item">8. Information Blood Bank in Bangladesh . </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"style="color: red;">
+                <div class="panel panel-default text-left-align">
+                    <div class="panel-heading">
+						<h3 class="panel-title"><center><img src="../img/Platinum.jpg" class="img-responsive"  height="40px weight="20px""></center></h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price" style="font-size: 200%"><center><b><sup>TK</sup>500<sup></sup></span>
+                        <span class="period">Per Year</span></b> </center>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Affordable cost & easy to use.</li>
+                        <li class="list-group-item">2. Accepted at biggest network across the country.</li>
+                        <li class="list-group-item">3. You can choose for everyone in your friends & family.</li>
+                        <li class="list-group-item">4. Health related additional value added services.</li>
+                        <li class="list-group-item">5. Get  20% Discounts is must.</li>
+						<li class="list-group-item">6. Online Doctor Appointment. </li>
+						<li class="list-group-item">7. Online Hospital Appointment. </li>
+						<li class="list-group-item">8. Information Blood Bank in Bangladesh . </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        
+							</div>
+						
+						<div class="clearfix"> </div>
+					</div>
+					
+				<div class="sign-u">
+						<div class="sign-up1">
+							 <h4>Please Select Your Package  :</h4>
+						</div>
+						<br>
+						<div class="sign-up2">
+							<div class="form-group">
+								<div class="col-sm-">
+									<select name="Package" id="selector1" class="form-control1">
+										<option> Select Package  </option>
+										<option> Silver  </option>
+										<option> Gold </option>
+										<option> Platinum </option>
+									      
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"> </div>
+
+
+
+
+						<div class="sign-u">
+						<div class="sign-up1">
+							 <h4>Please Select Your Hospital  :</h4>
+						</div>
+						<br>
+						<div class="sign-up2">
+							<div class="form-group">
+								<div class="col-sm-">
+									<select name="reqhospital" id="selector1" class="form-control1">
+								<option> Select Hospital  </option>
+								<option> Ibn sina hospital sylhet  </option>
+								<option> Raj dental centre </option>
+								<option> japan-bangladesh friendship hospital </option>
+								<option> Green hospital & diagnostic lab </option>
+								<option> Gazipur clinic & diagnostic lab </option>
+								<option> Islami bank hospital, rajshahi </option>
+								<option> Islami bank community hospital  </option>
+								<option> Care-first diagnostic solution </option>
+								<option> Ahsanullah clinic </option>
+							    <option> Northern private medical college & hospital </option>
+								<option> Islami bank community hospital rangpur ltd </option>
+								<option> Holy path diagnostic centure </option>
+								<option> Health care diagnostic center </option>
+								<option> Central hospital </option>
+								<option> Holy care medical services </option>
+								<option> South point hospital </option>
+								<option> Adhunik hospital </option>
+								<option> Good health clinic </option>
+								<option> Unique hospital & diagonistic center </option>
+								<option> Ibn sina hospital & diagonistic center </option>
+								<option> Apex clinic & diagonistic centre </option>
+								<option> Health care hospital and troma center </option>
+								<option> Janata clinic & diagnostic centre </option>
+								<option> Zia heart foundation hospital and research Institute </option>
+								<option> Woodland medical services </option>
+								<option> Medicare poli clinic and diagonistic center </option>
+								<option> Al-chemi diagnostic centre </option>
+								<option> Desh health care & hospital </option>
+								<option> Jamuna diagnostic centre </option>
+								<option> Amina general hostpital ltd </option>
+								<option> islami bank community hospital dinajpur ltd </option>
+								<option> health care poly clinic </option>
+								<option> desh clinic & diagnostic </option>
+								<option> metro diagnostic center limited </option>
+								<option> Islami Bank Community Hospital Manikgonj Ltd  </option>
+								<option> Central Hospital & Digital Diagnostic Center </option>
+										
+									      
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"> </div>
+
+
+
+
+						<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Payment (tk)* :</h4>
+						</div>
+						<div class="sign-up2">
+						
+								<input type="text" name="payment" required>
+							
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+
+
+					
+							
+							<br>
+							<div class="sign-u">
+						<div class="sign-up1">
+						<h3 style="color: #993399;text-align: center;"><b>Our Bkash Number  :+8801822224392 <b></h3>
+						</div>
+						<br>
+						<div class="clearfix"> </div>
+					
+								</div>
+								
+								
+								<br>
+							<div class="col-md-12 panel-grids">
+								<div class="panel panel-primary"> <div class="panel-heading"> <center><h3 class="panel-title" style="font-size: 110%"><b>TERMS AND CONDITIONS</b> </h3></center> </div> <div class="panel-body" style="color:#3377ff; font-size: 100%;">  01.	নিবন্ধন হওয়ার দিন থেকে এই কার্ডের মেয়াদ ৩৬৫ দিন ব্যবহারের সকল সুযোগ পাবেন।<br><br>
+02.	আপনি অব্যশই চিকিৎসা শুরুর আগ মুহরতে আমাদের প্রতিনিধি ও অথবা সরাসরি আমাদের কল সেন্টারে ফোন দিয়ে – আপনার চিকিৎসাকৃত প্রতিষ্ঠানের নাম ও সেবার বিবরন উল্ল্যখ করতে হবে । <br> <br>
+03.	কার্ড হারিয়ে গেলে সাথে সাথেই আমাদের প্রতিনিধি ও অথবা সরাসরি আমাদের কল সেন্টারে ফোন দিয়ে জানাতে হবে । </div> </div>
+					</div>
+							
+						<div class="sign-u">
+						<div class="sign-up1">
+							 <h4> Select Payment Method  :</h4>
+						</div>
+						<br><br>
+						<div class="sign-up2">
+							<div class="form-group">
+								<br>
+								<div class="col-sm-">
+									<select name="pmethod" id="selector1" class="form-control1">
+										<option> Select Payment Method  </option>
+										<option> BKash  </option>
+										</select>
+								</div>
+							</div>
+						</div>
+							
+							
+							
+							<div class="clearfix"> </div>
+					</div>
+
+					<div class="sign-u">
+						<div class="sign-up1">
+							<h4>Transition ID)* :</h4>
+						</div>
+						<div class="sign-up2">
+						
+								<input type="text" name="transitionID" required>
+							
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<br>
+					
+					<div class="sub_home">
+					
+						<input type="submit" name="sign" value="Submit">
+					
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.js"> </script>
+</body>
+</html>

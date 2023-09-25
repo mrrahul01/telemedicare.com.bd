@@ -1,0 +1,17 @@
+[15-May-2017 00:40:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 105
+[15-May-2017 00:40:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 118
+[15-May-2017 00:40:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 130
+[15-May-2017 00:40:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 143
+[15-May-2017 04:18:16 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 105
+[15-May-2017 04:18:16 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 118
+[15-May-2017 04:18:16 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 130
+[15-May-2017 04:18:16 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 143
+[15-May-2017 12:14:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 105
+[15-May-2017 12:14:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 118
+[15-May-2017 12:14:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 130
+[15-May-2017 12:14:17 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 143
+[15-May-2017 12:17:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 105
+[15-May-2017 12:17:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 118
+[15-May-2017 12:17:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 130
+[15-May-2017 12:17:03 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/index.php on line 143
+[15-May-2017 12:17:10 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/awaazsuper/public_html/appointment/doctor_details.php on line 113
